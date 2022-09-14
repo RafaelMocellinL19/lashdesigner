@@ -1,0 +1,203 @@
+
+
+body {
+    background:rgb(148, 176, 151);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+   
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.ebld{
+    text-align: center;
+    color: rgb(111, 136, 114);
+}
+
+
+    .cabecalho .logo{
+        background: url(src/ebldlogo.jpg)center center no-repeat;
+        width: 250px;
+        height: 250px;
+        display: inline-flex;
+    }
+    .cabecalho .logo h1{
+        font-size: 0;
+    }
+
+
+
+nav {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex; 
+}
+#titulo {
+    text-align: center;
+
+
+}
+
+
+#menu-opener {
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-right:10px;
+}
+#menu-area {
+    width:200px;
+    height:100vh;
+    background: rgb(111, 136, 114);
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+}
+#menu-area ul, #menu-area li {
+    padding:0;
+    list-style:none;
+}
+#menu-area li {
+    display:block;
+    padding:10px;
+    color:#555;
+    cursor:pointer;
+}
+#menu-area li:hover {
+    background: rgb(111, 136, 114);
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.scrollbutton{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #555;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+aside{
+    
+    padding: 50px;
+    max-width: 80%;
+}
+.faq{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.accordion{
+    background-color: rgb(111, 136, 114);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active,.accordion:hover{
+    background-color: rgb(187, 159, 137);
+    border: 1px dashed rgb(61, 73, 63);
+}
+.accordion::after{
+content: '\002B';
+columns: #777;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+.active::after{
+    content: '\2212';
+}
+.panel{
+    padding: 0 16px;
+    background-color: rgb(148, 176, 151);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.curiosity{
+   max-width: 80%;
+   padding: 50px;
+   
+    
+}
+.accordion-list{
+    background-color: rgb(111, 136, 114);
+    color: black;
+    padding: 18px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.curititlte{
+text-align: center;
+}
+
+.work{
+    text-align: center;
+}
+
+.procedimentos{
+    font-weight: bolder;
+    margin: 50px;
+    padding: 10px;
+}
+
+.procedimentos ul li{
+    list-style: "→";
+   text-align: center;
+}
+.intro{
+    text-align: center;
+    text-decoration: dashed;
+}
+
+.info{
+    margin: 50px;
+    text-align: center;
+    border: #555;
+    background-color: rgb(111, 136, 114)
+   
+}
+
+.endereco{
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(111, 136, 114)
+}
+
+
+.footer .wpp{
+    background: url(wpplogo/Screenshot_1.png)center center no-repeat;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+}
+.footer .wpp h1{
+    font-size: 0;
+}
